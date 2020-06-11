@@ -74,8 +74,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
-  return str1.lentgth == str2.lentgth
+
+    return str1.length === str2.length
 }
 
 function menosQueNoventa(num) {
@@ -172,7 +172,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-
+  
   return nombre + ' ' +  apellido
 }
 
@@ -187,7 +187,6 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un cuadrado teniendo su altura y ancho
   // Tu código:
-  
   let area = alto * ancho
   return area
 }
