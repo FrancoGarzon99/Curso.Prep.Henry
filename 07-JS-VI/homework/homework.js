@@ -9,11 +9,16 @@ function sumarArray(numeros, cb) {
   // Suma todos los números enteros (int/integers) de un array ("numeros")
   // Pasa el resultado a `cb`
   // No es necesario devolver nada 
+  /*
   let suma = 0
   numeros.forEach(element => {
     suma += element
   });
   return cb(suma)
+  */
+  cb(numeros.reduce(function (a, e){
+    return a + e
+  }))
 }
 
 function forEach(array, cb) {
@@ -31,11 +36,11 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //return array.map(e => cb(e))
-  let arreglo = []
+  let arregloNuevo = []
   array.map(function(e, i){
-    arreglo[i] = cb(e)
+    arregloNuevo[i] = cb(e)
   })
-  return arreglo
+  return arregloNuevo
 }
 
 // No modificar nada debajo de esta línea
