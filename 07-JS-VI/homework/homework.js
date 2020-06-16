@@ -30,7 +30,12 @@ function map(array, cb) {
   // Crea un nuevo array
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
-  return array.map(e => cb(e))
+  //return array.map(e => cb(e))
+  let arreglo = []
+  array.map(function(e, i){
+    arreglo[i] = cb(e)
+  })
+  return arreglo
 }
 
 // No modificar nada debajo de esta línea
