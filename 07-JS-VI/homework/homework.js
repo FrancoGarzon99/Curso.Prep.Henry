@@ -24,11 +24,16 @@ function sumarArray(numeros, cb) {
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
-  let listNumber = 0
-  array.forEach(element => {
-    listNumber = cb(element)
-  });
-  return listNumber
+
+  // let listNumber = 0
+  // array.forEach(element => {
+  //   listNumber = cb(element)
+  // });
+  // return listNumber
+  array.forEach(e => {
+       cb(e)
+  })
+
 }
 
 function map(array, cb) {
